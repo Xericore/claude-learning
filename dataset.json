@@ -1,14 +1,17 @@
 [
   {
-    "task": "Parse an AWS S3 bucket name from an S3 URI in the format 's3://bucket-name/key/path'",
-    "format": "regex"
+    "task": "Parse an AWS CloudWatch log entry and extract the timestamp, log level, and message. The log format is: '[TIMESTAMP] [LEVEL] MESSAGE'",
+    "format": "regex",
+    "solution_criteria": "The regex should correctly capture three groups: timestamp (ISO 8601 format), log level (ERROR, WARN, INFO, DEBUG), and the message content. Should handle multi-word messages."
   },
   {
-    "task": "Create a JSON configuration object for an AWS Lambda function that includes function name, runtime, role ARN, timeout, and memory size",
-    "format": "json"
+    "task": "Create a Python function that takes an AWS S3 bucket name and object key, then returns a formatted S3 URI (s3://bucket/key) and an HTTPS URL (https://bucket.s3.amazonaws.com/key)",
+    "format": "python",
+    "solution_criteria": "Function should accept bucket name and key as parameters, handle URL encoding for special characters in keys, and return both URI formats as a tuple or dictionary."
   },
   {
-    "task": "Write a Python function that validates an AWS IAM role ARN format and returns True if valid, False otherwise",
-    "format": "python"
+    "task": "Generate a JSON configuration object for an AWS Lambda function that processes S3 events, with environment variables for log level and timeout, and IAM role ARN",
+    "format": "json",
+    "solution_criteria": "JSON should include function name, handler, runtime, timeout, environment variables object, role ARN, and event source mapping for S3. All values should be realistic and properly structured."
   }
 ]
