@@ -1,50 +1,38 @@
 [
   {
     "prompt_inputs": {
-      "height": "178",
-      "weight": "68",
-      "goal": "Marathon runner preparing for race day - maximize carbohydrate intake and optimize hydration timing",
-      "restrictions": "Vegetarian, no nuts"
+      "content": "Climate change mitigation through carbon pricing mechanisms has emerged as a critical policy tool, with economists demonstrating that cap-and-trade systems can reduce greenhouse gas emissions by 15-20% while minimizing economic disruption. However, the effectiveness of these market-based approaches depends heavily on accurate climate modeling, which incorporates complex atmospheric dynamics, ocean circulation patterns, and feedback mechanisms that amplify warming. Simultaneously, developing nations argue that carbon taxation disproportionately impacts their economic growth trajectories, necessitating differentiated policy frameworks that balance climate obligations with development imperatives. Recent studies in environmental economics reveal that integrating renewable energy infrastructure investments with carbon pricing creates synergistic effects, reducing overall mitigation costs by 30% compared to isolated policy interventions."
     },
     "solution_criteria": [
-      "Meal plan covers all three meals plus pre/during/post-workout nutrition appropriate for marathon training",
-      "Carbohydrate content is high (55-65% of calories) with strategic timing around training",
-      "Hydration strategy includes timing and volume recommendations aligned with exercise intensity",
-      "All meals respect vegetarian and nut-free restrictions"
+      "Extracts all major topics including climate change, carbon pricing, economics, policy, climate modeling, and renewable energy",
+      "Identifies distinct yet interconnected subjects without redundancy",
+      "Returns results as a JSON array of strings"
     ],
-    "task_description": "Write a compact, concise 1 day meal plan for a single athlete.",
-    "scenario": "Testing with a specific sport discipline and corresponding dietary needs (e.g., a marathon runner requiring high carbohydrate intake and specific hydration timing)"
+    "task_description": "\n    Extract topics out of a passage of text from a scholarly article into a JSON array of strings\"\n    ",
+    "scenario": "Testing with a multi-disciplinary passage containing overlapping topics (e.g., climate science intersecting with economics and policy) to verify the prompt can identify distinct yet interconnected subjects"
   },
   {
     "prompt_inputs": {
-      "height": "178 cm",
-      "weight": "72 kg",
-      "goal": "muscle gain with high protein intake",
-      "restrictions": "vegan, no gluten, no nuts"
+      "content": "The study examined how organizational hierarchies influence information dissemination patterns during crisis situations. Through longitudinal analysis of communication networks, we observed that rigid vertical structures paradoxically delayed critical safety announcements, while distributed decision-making frameworks enabled faster response times. These findings suggest that institutional resilience depends not merely on resource allocation but on the adaptive capacity embedded within social relationships and trust mechanisms. Furthermore, the data revealed unexpected correlations between informal mentorship practices and organizational learning outcomes, indicating that knowledge transfer occurs through multiple pathways beyond formal training protocols."
     },
     "solution_criteria": [
-      "Meal plan covers all three meals and includes snacks totaling approximately 2800-3000 calories",
-      "All meals strictly adhere to vegan, gluten-free, and nut-free restrictions",
-      "Includes at least 120g of plant-based protein distributed across the day from varied sources (legumes, tofu, tempeh, seeds, grains)",
-      "Plan is presented in compact, easy-to-read format suitable for a single day"
+      "Extracts conceptual themes (e.g., organizational resilience, adaptive capacity, knowledge transfer) rather than only surface-level keywords",
+      "Identifies implicit topics requiring inference from context (e.g., institutional flexibility, informal learning systems) not explicitly stated as single terms",
+      "Includes both direct and inferred topics in a JSON array of strings format"
     ],
-    "task_description": "Write a compact, concise 1 day meal plan for a single athlete.",
-    "scenario": "Testing with multiple dietary restrictions or preferences (e.g., a vegan weightlifter needing plant-based protein sources and calorie targets)"
+    "task_description": "\n    Extract topics out of a passage of text from a scholarly article into a JSON array of strings\"\n    ",
+    "scenario": "Testing with a passage containing ambiguous or implicit topics that require inference rather than direct keyword matching, ensuring the prompt extracts conceptual themes rather than just surface-level terms"
   },
   {
     "prompt_inputs": {
-      "height": "178 cm",
-      "weight": "72 kg",
-      "goal": "Maintain energy and performance during pre-competition week while minimizing digestive stress before daily swimming sessions",
-      "restrictions": "No dairy, no high-fiber foods"
+      "content": "Recent advances in CRISPR-Cas9 gene editing have demonstrated remarkable efficacy in treating monogenic disorders through precise DNA sequence modification. The mechanism leverages single-guide RNA (sgRNA) molecules to direct the Cas9 endonuclease to target genomic loci with high specificity, achieving off-target mutation rates below 0.1% in optimized protocols. Furthermore, base editing (BE) and prime editing (PE) represent next-generation approaches that enable A-to-G and C-to-T transitions without double-strand breaks, significantly reducing genotoxic effects. Clinical applications have expanded to include CAR-T cell immunotherapy, where CRISPR modifications enhance T-cell receptor (TCR) specificity and proliferation capacity in hematologic malignancies. However, challenges remain regarding delivery efficiency across the blood-brain barrier (BBB) and mitigating innate immune responses to Cas9 proteins and viral vectors."
     },
     "solution_criteria": [
-      "Meal plan covers all meals for one day (breakfast, lunch, dinner, snacks)",
-      "All meals are easily digestible and avoid dairy and high-fiber ingredients",
-      "Caloric intake and macronutrient distribution are appropriate for maintaining energy during pre-competition training",
-      "Meals are practical and compact enough to prepare/consume without excessive time burden"
+      "Extracts all major topics including CRISPR-Cas9, gene editing, base editing, prime editing, CAR-T cell immunotherapy, and delivery challenges",
+      "Correctly handles technical acronyms (sgRNA, BE, PE, TCR, BBB) by incorporating them into or associating them with appropriate topic names",
+      "Returns output as a JSON array of strings with no additional formatting or metadata"
     ],
-    "task_description": "Write a compact, concise 1 day meal plan for a single athlete.",
-    "scenario": "Testing with a specific goal and training phase (e.g., a swimmer in pre-competition week needing to maintain energy while avoiding heavy digestion issues)"
+    "task_description": "\n    Extract topics out of a passage of text from a scholarly article into a JSON array of strings\"\n    ",
+    "scenario": "Testing with a highly specialized technical passage containing domain-specific jargon and acronyms to verify the prompt correctly identifies formal topic names while handling abbreviations and technical nomenclature"
   }
 ]

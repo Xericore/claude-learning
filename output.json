@@ -1,65 +1,53 @@
 [
   {
-    "output": "# One-Day Marathon Training Meal Plan for Vegetarian Athlete\n**178 cm, 68 kg | Carbohydrate-Loading Vegetarian | Nut-Free**\n\n---\n\n## Daily Nutrition Targets\n- **Calories:** 2,900-3,100 kcal\n- **Protein:** 102-115g (1.5-1.7g per kg bodyweight)\n- **Carbohydrates:** 435-465g (6.4-6.8g per kg bodyweight)\n- **Fat:** 65-75g\n\n---\n\n## BREAKFAST (6:30 AM)\n**Oatmeal with Fruit & Honey**\n- Rolled oats: 80g\n- Whole milk: 250ml\n- Banana: 150g\n- Blueberries: 100g\n- Honey: 20g\n- Ground flaxseed: 15g\n- Cinnamon\n\n**Macros:** 520 cal | 14g protein | 92g carbs | 9g fat\n\n---\n\n## HYDRATION & LIGHT SNACK (8:30 AM)\n**Pre-Run Fuel**\n- White toast (2 slices): 60g\n- Jam: 30g\n- Orange juice: 250ml\n- Water: 500ml\n\n**Macros:** 280 cal | 6g protein | 62g carbs | 2g fat\n\n---\n\n## MID-MORNING (10:00 AM - POST-RUN)\n**Recovery Smoothie**\n- Greek yogurt (plain): 200g\n- White bread (1 slice): 30g\n- Honey: 25g\n- Banana: 120g\n- Milk: 200ml\n- Strawberries: 100g\n\n**Macros:** 445 cal | 22g protein | 72g carbs | 6g fat\n\n---\n\n## LUNCH (12:30 PM)\n**Pasta with Cheese & Vegetables**\n- White pasta (cooked): 150g\n- Cheese (cheddar): 40g\n- Olive oil: 12ml\n- Diced tomatoes (canned): 200g\n- Zucchini: 150g\n- Carrots: 100g\n- Garlic, basil, salt\n- Glass of whole milk: 200ml\n\n**Macros:** 720 cal | 26g protein | 92g carbs | 20g fat\n\n---\n\n## AFTERNOON SNACK (3:00 PM)\n**Carbohydrate-Rich Fuel**\n- Rice cakes (3): 75g\n- Honey: 20g\n- White grape juice: 300ml\n- Water with electrolytes: 500ml\n\n**Macros:** 310 cal | 3g protein | 76g carbs | 1g fat\n\n---\n\n## DINNER (6:30 PM)\n**Lentil & Rice Bowl**\n- White rice (cooked): 180g\n- Red lentils (cooked): 120g\n- Olive oil: 15ml\n- Bell peppers (mixed): 150g\n- Onion: 80g\n- Vegetable broth: 200ml\n- Turmeric, cumin\n- Plain yogurt (side): 100g\n\n**Macros:** 570 cal | 24g protein | 85g carbs | 12g fat\n\n---\n\n## EVENING SNACK (8:30 PM)\n**Milk & Toast**\n- Whole wheat bread (2 slices): 60g\n- Honey: 15g\n- Whole milk: 250ml\n\n**Macros:** 280 cal | 10g protein | 48g carbs | 7g fat\n\n---\n\n## HYDRATION THROUGHOUT DAY\n- **7:00 AM:** 500ml water\n- **12:00 PM:** 500ml water + electrolytes\n- **3:00 PM:** 500ml electrolyte drink\n- **6:00 PM:** 400ml water\n- **Total daily hydration:** 3.5-4L\n\n---\n\n## DAILY TOTALS\n| Nutrient | Amount |\n|----------|-----",
+    "output": "```json\n[\n  \"Climate change mitigation\",\n  \"Carbon pricing mechanisms\",\n  \"Cap-and-trade systems\",\n  \"Greenhouse gas emissions\",\n  \"Climate modeling\",\n  \"Atmospheric dynamics\",\n  \"Ocean circulation patterns\",\n  \"Feedback mechanisms\",\n  \"Carbon taxation\",\n  \"Developing nations\",\n  \"Economic growth\",\n  \"Policy frameworks\",\n  \"Environmental economics\",\n  \"Renewable energy infrastructure\",\n  \"Mitigation costs\"\n]\n```",
     "test_case": {
       "prompt_inputs": {
-        "height": "178",
-        "weight": "68",
-        "goal": "Marathon runner preparing for race day - maximize carbohydrate intake and optimize hydration timing",
-        "restrictions": "Vegetarian, no nuts"
+        "content": "Climate change mitigation through carbon pricing mechanisms has emerged as a critical policy tool, with economists demonstrating that cap-and-trade systems can reduce greenhouse gas emissions by 15-20% while minimizing economic disruption. However, the effectiveness of these market-based approaches depends heavily on accurate climate modeling, which incorporates complex atmospheric dynamics, ocean circulation patterns, and feedback mechanisms that amplify warming. Simultaneously, developing nations argue that carbon taxation disproportionately impacts their economic growth trajectories, necessitating differentiated policy frameworks that balance climate obligations with development imperatives. Recent studies in environmental economics reveal that integrating renewable energy infrastructure investments with carbon pricing creates synergistic effects, reducing overall mitigation costs by 30% compared to isolated policy interventions."
       },
       "solution_criteria": [
-        "Meal plan covers all three meals plus pre/during/post-workout nutrition appropriate for marathon training",
-        "Carbohydrate content is high (55-65% of calories) with strategic timing around training",
-        "Hydration strategy includes timing and volume recommendations aligned with exercise intensity",
-        "All meals respect vegetarian and nut-free restrictions"
+        "Extracts all major topics including climate change, carbon pricing, economics, policy, climate modeling, and renewable energy",
+        "Identifies distinct yet interconnected subjects without redundancy",
+        "Returns results as a JSON array of strings"
       ],
-      "task_description": "Write a compact, concise 1 day meal plan for a single athlete.",
-      "scenario": "Testing with a specific sport discipline and corresponding dietary needs (e.g., a marathon runner requiring high carbohydrate intake and specific hydration timing)"
-    },
-    "score": 4,
-    "reasoning": "The solution demonstrates strong structure and addresses most criteria effectively: it includes 7 eating occasions with exact foods, portions, and timing; respects all dietary restrictions; and provides a detailed hydration strategy. However, it has a critical flaw: the daily totals section is incomplete and cuts off mid-table, failing to provide the complete daily caloric total and full macronutrient breakdown. This violates the mandatory requirement for 'Daily caloric total' and 'Macronutrient breakdown.' While the individual meal macros are provided and appear to sum appropriately, the absence of the completed summary table is a material omission of a mandatory deliverable."
-  },
-  {
-    "output": "# One-Day Muscle-Gain Meal Plan for Vegan Athlete\n**178 cm, 72 kg | High-Protein Vegan | Gluten-Free, Nut-Free**\n\n---\n\n## Daily Nutrition Targets\n- **Calories:** 2,800-3,000 kcal\n- **Protein:** 145-160g (2.0-2.2g per kg bodyweight)\n- **Carbohydrates:** 350-380g\n- **Fat:** 75-85g\n\n---\n\n## BREAKFAST (7:00 AM)\n**Tofu Scramble with Gluten-Free Toast**\n- Firm tofu: 220g (crumbled & saut\u00e9ed)\n- Turmeric: 2g\n- Nutritional yeast: 12g\n- Spinach: 100g\n- Gluten-free bread: 60g (2 slices)\n- Olive oil: 15ml\n- Sea salt & black pepper\n\n**Macros:** 420 cal | 22g protein | 38g carbs | 16g fat\n\n---\n\n## MID-MORNING SNACK (10:00 AM)\n**Protein Smoothie**\n- Vegan protein powder (pea/rice blend): 30g\n- Oat milk (fortified): 250ml\n- Banana: 120g\n- Chickpea flour: 12g\n- Maple syrup: 15ml\n- Water: 100ml\n\n**Macros:** 375 cal | 28g protein | 50g carbs | 4g fat\n\n---\n\n## LUNCH (1:00 PM)\n**Lentil & Sweet Potato Buddha Bowl**\n- Cooked red lentils: 160g\n- Roasted sweet potato: 220g\n- Quinoa (cooked): 70g\n- Tahini dressing: 18ml\n- Steamed broccoli: 150g\n- Olive oil: 10ml\n- Lemon juice, garlic & herbs\n\n**Macros:** 710 cal | 26g protein | 98g carbs | 17g fat\n\n---\n\n## PRE-WORKOUT (3:30 PM)\n**Quick Energy Snack**\n- Gluten-free oat bar (homemade): 50g\n- Apple: 150g\n- Coconut water: 250ml\n\n**Macros:** 265 cal | 7g protein | 62g carbs | 2g fat\n\n---\n\n## POST-WORKOUT (5:30 PM)\n**Recovery Shake**\n- Vegan protein powder: 35g\n- Coconut milk (canned, full-fat): 150ml\n- White rice (cooked): 55g\n- Banana: 100g\n- Hemp seeds: 12g\n- Water: 150ml\n\n**Macros:** 445 cal | 33g protein | 50g carbs | 13g fat\n\n---\n\n## DINNER (7:30 PM)\n**Chickpea Pasta Marinara**\n- Gluten-free chickpea pasta (dry): 90g\n- Canned diced tomatoes: 280g\n- Cooked chickpeas: 130g\n- Olive oil: 12ml\n- Garlic, basil, oregano\n- Nutritional yeast: 15g\n- Mixed green salad: 150g with olive oil dressing (8ml)\n\n**Macros:** 605 cal | 25g protein | 75g carbs | 18g fat\n\n---\n\n## EVENING SNACK (9:00 PM)\n**Fortified Coconut Yogurt Bowl**\n- Coconut yogurt (fortified with B12 & D): 160g\n- Hemp seeds: 18g\n- Pumpkin seeds: 15g\n- Gluten-free granola: 35g\n- Blueberries: 80g\n\n**Macros:** 330 cal | 11g protein | 32g carbs | 16g fat\n\n---\n\n## DAILY TOTALS\n| Nutrient | Amount | % of Calories |\n|----------|--------|----------------|",
-    "test_case": {
-      "prompt_inputs": {
-        "height": "178 cm",
-        "weight": "72 kg",
-        "goal": "muscle gain with high protein intake",
-        "restrictions": "vegan, no gluten, no nuts"
-      },
-      "solution_criteria": [
-        "Meal plan covers all three meals and includes snacks totaling approximately 2800-3000 calories",
-        "All meals strictly adhere to vegan, gluten-free, and nut-free restrictions",
-        "Includes at least 120g of plant-based protein distributed across the day from varied sources (legumes, tofu, tempeh, seeds, grains)",
-        "Plan is presented in compact, easy-to-read format suitable for a single day"
-      ],
-      "task_description": "Write a compact, concise 1 day meal plan for a single athlete.",
-      "scenario": "Testing with multiple dietary restrictions or preferences (e.g., a vegan weightlifter needing plant-based protein sources and calorie targets)"
-    },
-    "score": 5,
-    "reasoning": "The solution demonstrates excellent meal planning with proper timing, portion specificity, and comprehensive adherence to all dietary restrictions. The protein distribution across varied plant-based sources is well-executed. However, the solution has a critical flaw: the daily totals section is incomplete and cuts off without providing the final daily caloric total or complete macronutrient breakdown. This is a mandatory requirement explicitly stated in the task. Additionally, the actual caloric total (3,150 kcal) exceeds the specified target range. While the solution is nearly excellent in all other respects, the incomplete mandatory information and caloric overage prevent a higher score."
-  },
-  {
-    "output": "# One-Day Pre-Competition Meal Plan for Swimmer\n**178 cm, 72 kg | Dairy-Free, Low-Fiber | Easy Digestion Focus**\n\n---\n\n## Daily Nutrition Targets\n- **Calories:** 2,600-2,800 kcal\n- **Protein:** 108-130g (1.5-1.8g per kg bodyweight)\n- **Carbohydrates:** 325-360g\n- **Fat:** 65-75g\n\n*Lower fiber intake minimizes GI stress before swimming sessions*\n\n---\n\n## BREAKFAST (7:00 AM)\n**White Rice & Egg Scramble**\n- Eggs: 2 large (120g)\n- Cooked white rice: 150g\n- Olive oil: 10ml\n- Sea salt & white pepper\n- White toast: 1 slice (30g)\n- Honey: 15ml\n\n**Macros:** 520 cal | 14g protein | 68g carbs | 18g fat\n\n---\n\n## MID-MORNING SNACK (9:30 AM)\n**Pre-Swim Fuel**\n- Banana: 150g\n- White bread: 60g\n- Almond butter: 20g\n- Honey: 10ml\n\n**Macros:** 380 cal | 10g protein | 58g carbs | 12g fat\n\n---\n\n## LUNCH (12:30 PM)\n**Grilled Chicken & White Potato**\n- Grilled chicken breast: 180g\n- Boiled white potato: 250g\n- Olive oil: 12ml\n- Steamed white rice: 60g (cooked)\n- Salt & herbs (no spices)\n- Peeled cucumber: 150g\n\n**Macros:** 620 cal | 42g protein | 72g carbs | 14g fat\n\n---\n\n## PRE-SWIMMING SESSION (3:00 PM)\n**Quick Carbs & Hydration**\n- White bagel: 85g\n- Honey: 15ml\n- Sports drink (electrolytes): 500ml\n- Water: 250ml\n\n**Macros:** 280 cal | 8g protein | 62g carbs | 2g fat\n\n---\n\n## POST-SWIMMING RECOVERY (5:00 PM)\n**Recovery Shake**\n- Non-dairy protein powder (rice/pea blend): 30g\n- Coconut water: 250ml\n- White rice flour: 40g\n- Banana: 100g\n- Coconut oil: 10ml\n- Water: 100ml\n\n**Macros:** 370 cal | 25g protein | 52g carbs | 11g fat\n\n---\n\n## DINNER (7:00 PM)\n**White Fish & Rice Pilaf**\n- Baked white fish (cod/halibut): 200g\n- Cooked white rice: 200g\n- Olive oil: 12ml\n- Refined vegetable broth: 100ml\n- White onion (cooked): 60g\n- Sea salt & dill\n- Peeled carrot (cooked): 100g\n\n**Macros:** 520 cal | 35g protein | 60g carbs | 12g fat\n\n---\n\n## EVENING SNACK (9:00 PM)\n**Light Digestible Snack**\n- Plain rice cakes: 40g\n- Honey: 20ml\n- Coconut milk (light): 100ml\n\n**Macros:** 210 cal | 2g protein | 48g carbs | 4g fat\n\n---\n\n## DAILY TOTALS\n| Nutrient | Amount |\n|----------|--------|\n| **Calories** | 2,900 |\n| **Protein** | 136g (18.7% calories) |\n| **Carbohydrates** | 420g (57.9% calories) |\n| **Fat** | 73g (22.6% calories) |\n\n---\n\n## Key Features for Competition Week:\n\u2713 **No dairy** - all animal proteins & fats from eggs, fish, oils  \n\u2713 **Minimal fiber** - white rice, peeled vegetables,",
-    "test_case": {
-      "prompt_inputs": {
-        "height": "178 cm",
-        "weight": "72 kg",
-        "goal": "Maintain energy and performance during pre-competition week while minimizing digestive stress before daily swimming sessions",
-        "restrictions": "No dairy, no high-fiber foods"
-      },
-      "solution_criteria": [
-        "Meal plan covers all meals for one day (breakfast, lunch, dinner, snacks)",
-        "All meals are easily digestible and avoid dairy and high-fiber ingredients",
-        "Caloric intake and macronutrient distribution are appropriate for maintaining energy during pre-competition training",
-        "Meals are practical and compact enough to prepare/consume without excessive time burden"
-      ],
-      "task_description": "Write a compact, concise 1 day meal plan for a single athlete.",
-      "scenario": "Testing with a specific goal and training phase (e.g., a swimmer in pre-competition week needing to maintain energy while avoiding heavy digestion issues)"
+      "task_description": "\n    Extract topics out of a passage of text from a scholarly article into a JSON array of strings\"\n    ",
+      "scenario": "Testing with a multi-disciplinary passage containing overlapping topics (e.g., climate science intersecting with economics and policy) to verify the prompt can identify distinct yet interconnected subjects"
     },
     "score": 9,
-    "reasoning": "The solution fully satisfies all three mandatory requirements with precision: daily totals are clearly stated, macronutrient breakdown is provided both daily and per meal, and all meals include exact foods, portions, and timing. The plan excellently addresses the secondary criteria by being specifically tailored to pre-competition swimming (with strategic pre/post-swim nutrition), completely avoiding dairy, minimizing fiber through refined carbohydrate choices, and maintaining practical meal preparation. The minor caloric overage (3.6%) is negligible and the truncated text at the end does not affect the completeness of the actual meal plan content. The solution demonstrates strong understanding of athlete nutrition principles for the specific context."
+    "reasoning": "The solution meets all mandatory requirements: it returns a valid JSON array of strings containing topics from the article with no extra commentary. It successfully addresses the secondary criteria by extracting all major topic areas (climate change mitigation, carbon pricing mechanisms, cap-and-trade systems, climate modeling, atmospheric dynamics, ocean circulation, feedback mechanisms, carbon taxation, developing nations, economic growth, policy frameworks, environmental economics, renewable energy infrastructure, and mitigation costs). The extraction is comprehensive and avoids redundancy. While a few minor topics could have been included, the solution captures the essential subjects discussed in the passage and demonstrates strong understanding of the text's scope."
+  },
+  {
+    "output": "```json\n[\n  \"Organizational hierarchies\",\n  \"Information dissemination\",\n  \"Crisis situations\",\n  \"Communication networks\",\n  \"Vertical structures\",\n  \"Safety announcements\",\n  \"Distributed decision-making\",\n  \"Response times\",\n  \"Institutional resilience\",\n  \"Resource allocation\",\n  \"Adaptive capacity\",\n  \"Social relationships\",\n  \"Trust mechanisms\",\n  \"Informal mentorship\",\n  \"Organizational learning\",\n  \"Knowledge transfer\",\n  \"Formal training protocols\"\n]\n```",
+    "test_case": {
+      "prompt_inputs": {
+        "content": "The study examined how organizational hierarchies influence information dissemination patterns during crisis situations. Through longitudinal analysis of communication networks, we observed that rigid vertical structures paradoxically delayed critical safety announcements, while distributed decision-making frameworks enabled faster response times. These findings suggest that institutional resilience depends not merely on resource allocation but on the adaptive capacity embedded within social relationships and trust mechanisms. Furthermore, the data revealed unexpected correlations between informal mentorship practices and organizational learning outcomes, indicating that knowledge transfer occurs through multiple pathways beyond formal training protocols."
+      },
+      "solution_criteria": [
+        "Extracts conceptual themes (e.g., organizational resilience, adaptive capacity, knowledge transfer) rather than only surface-level keywords",
+        "Identifies implicit topics requiring inference from context (e.g., institutional flexibility, informal learning systems) not explicitly stated as single terms",
+        "Includes both direct and inferred topics in a JSON array of strings format"
+      ],
+      "task_description": "\n    Extract topics out of a passage of text from a scholarly article into a JSON array of strings\"\n    ",
+      "scenario": "Testing with a passage containing ambiguous or implicit topics that require inference rather than direct keyword matching, ensuring the prompt extracts conceptual themes rather than just surface-level terms"
+    },
+    "score": 8,
+    "reasoning": "The solution fully satisfies all mandatory requirements: it provides a valid JSON array of strings containing topics from the passage with no extra commentary. It successfully meets the secondary criteria by extracting conceptual themes (institutional resilience, adaptive capacity, knowledge transfer) alongside direct topics, and includes some inferred topics (informal mentorship, organizational learning). However, it could be more comprehensive in identifying implicit topics requiring deeper inference (e.g., the concept of 'institutional flexibility' or 'informal learning systems' that are contextually present). The inclusion of some surface-level keywords slightly dilutes the focus on conceptual themes, though this is a minor issue. Overall, the solution demonstrates solid understanding of the task with room for deeper thematic inference."
+  },
+  {
+    "output": "```json\n[\n  \"CRISPR-Cas9 gene editing\",\n  \"Monogenic disorders\",\n  \"DNA sequence modification\",\n  \"Single-guide RNA\",\n  \"Cas9 endonuclease\",\n  \"Off-target mutations\",\n  \"Base editing\",\n  \"Prime editing\",\n  \"Double-strand breaks\",\n  \"CAR-T cell immunotherapy\",\n  \"T-cell receptor\",\n  \"Hematologic malignancies\",\n  \"Blood-brain barrier\",\n  \"Innate immune responses\",\n  \"Viral vectors\"\n]\n```",
+    "test_case": {
+      "prompt_inputs": {
+        "content": "Recent advances in CRISPR-Cas9 gene editing have demonstrated remarkable efficacy in treating monogenic disorders through precise DNA sequence modification. The mechanism leverages single-guide RNA (sgRNA) molecules to direct the Cas9 endonuclease to target genomic loci with high specificity, achieving off-target mutation rates below 0.1% in optimized protocols. Furthermore, base editing (BE) and prime editing (PE) represent next-generation approaches that enable A-to-G and C-to-T transitions without double-strand breaks, significantly reducing genotoxic effects. Clinical applications have expanded to include CAR-T cell immunotherapy, where CRISPR modifications enhance T-cell receptor (TCR) specificity and proliferation capacity in hematologic malignancies. However, challenges remain regarding delivery efficiency across the blood-brain barrier (BBB) and mitigating innate immune responses to Cas9 proteins and viral vectors."
+      },
+      "solution_criteria": [
+        "Extracts all major topics including CRISPR-Cas9, gene editing, base editing, prime editing, CAR-T cell immunotherapy, and delivery challenges",
+        "Correctly handles technical acronyms (sgRNA, BE, PE, TCR, BBB) by incorporating them into or associating them with appropriate topic names",
+        "Returns output as a JSON array of strings with no additional formatting or metadata"
+      ],
+      "task_description": "\n    Extract topics out of a passage of text from a scholarly article into a JSON array of strings\"\n    ",
+      "scenario": "Testing with a highly specialized technical passage containing domain-specific jargon and acronyms to verify the prompt correctly identifies formal topic names while handling abbreviations and technical nomenclature"
+    },
+    "score": 9,
+    "reasoning": "The solution fully satisfies all mandatory requirements: it provides a JSON array of strings containing topics from the article, with no extra commentary, and returns only the JSON array. It meets the secondary criteria by extracting major topics and properly handling acronyms through expansion. The solution is comprehensive and well-structured. Minor weaknesses exist in topic completeness (some relevant concepts are omitted), but these do not violate the stated criteria, which focus on extracting 'major topics' rather than exhaustive coverage. The solution appropriately prioritizes the most significant concepts discussed in the passage."
   }
 ]
