@@ -1,17 +1,50 @@
 [
   {
-    "task": "Parse an AWS CloudWatch log entry and extract the timestamp, log level, and message. The log format is: '[TIMESTAMP] [LEVEL] MESSAGE'",
-    "format": "regex",
-    "solution_criteria": "The regex should correctly capture three groups: timestamp (ISO 8601 format), log level (ERROR, WARN, INFO, DEBUG), and the message content. Should handle multi-word messages."
+    "prompt_inputs": {
+      "height": "178",
+      "weight": "68",
+      "goal": "Marathon runner preparing for race day - maximize carbohydrate intake and optimize hydration timing",
+      "restrictions": "Vegetarian, no nuts"
+    },
+    "solution_criteria": [
+      "Meal plan covers all three meals plus pre/during/post-workout nutrition appropriate for marathon training",
+      "Carbohydrate content is high (55-65% of calories) with strategic timing around training",
+      "Hydration strategy includes timing and volume recommendations aligned with exercise intensity",
+      "All meals respect vegetarian and nut-free restrictions"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for a single athlete.",
+    "scenario": "Testing with a specific sport discipline and corresponding dietary needs (e.g., a marathon runner requiring high carbohydrate intake and specific hydration timing)"
   },
   {
-    "task": "Create a Python function that takes an AWS S3 bucket name and object key, then returns a formatted S3 URI (s3://bucket/key) and an HTTPS URL (https://bucket.s3.amazonaws.com/key)",
-    "format": "python",
-    "solution_criteria": "Function should accept bucket name and key as parameters, handle URL encoding for special characters in keys, and return both URI formats as a tuple or dictionary."
+    "prompt_inputs": {
+      "height": "178 cm",
+      "weight": "72 kg",
+      "goal": "muscle gain with high protein intake",
+      "restrictions": "vegan, no gluten, no nuts"
+    },
+    "solution_criteria": [
+      "Meal plan covers all three meals and includes snacks totaling approximately 2800-3000 calories",
+      "All meals strictly adhere to vegan, gluten-free, and nut-free restrictions",
+      "Includes at least 120g of plant-based protein distributed across the day from varied sources (legumes, tofu, tempeh, seeds, grains)",
+      "Plan is presented in compact, easy-to-read format suitable for a single day"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for a single athlete.",
+    "scenario": "Testing with multiple dietary restrictions or preferences (e.g., a vegan weightlifter needing plant-based protein sources and calorie targets)"
   },
   {
-    "task": "Generate a JSON configuration object for an AWS Lambda function that processes S3 events, with environment variables for log level and timeout, and IAM role ARN",
-    "format": "json",
-    "solution_criteria": "JSON should include function name, handler, runtime, timeout, environment variables object, role ARN, and event source mapping for S3. All values should be realistic and properly structured."
+    "prompt_inputs": {
+      "height": "178 cm",
+      "weight": "72 kg",
+      "goal": "Maintain energy and performance during pre-competition week while minimizing digestive stress before daily swimming sessions",
+      "restrictions": "No dairy, no high-fiber foods"
+    },
+    "solution_criteria": [
+      "Meal plan covers all meals for one day (breakfast, lunch, dinner, snacks)",
+      "All meals are easily digestible and avoid dairy and high-fiber ingredients",
+      "Caloric intake and macronutrient distribution are appropriate for maintaining energy during pre-competition training",
+      "Meals are practical and compact enough to prepare/consume without excessive time burden"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for a single athlete.",
+    "scenario": "Testing with a specific goal and training phase (e.g., a swimmer in pre-competition week needing to maintain energy while avoiding heavy digestion issues)"
   }
 ]

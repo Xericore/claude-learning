@@ -1,0 +1,65 @@
+[
+  {
+    "output": "# Pre-Race Marathon Nutrition Plan\n\n## Daily Carbohydrate Strategy\n- **Target: 8-12g carbs per kg body weight** (544-816g daily)\n- Focus on easily digestible, high-glycemic carbs in final 3-7 days\n\n## Ideal Foods by Category\n\n### **Carbohydrate Sources** (prioritize these)\n- White rice, pasta, bread (refined = easier digestion)\n- Potatoes, sweet potatoes\n- Oats, rice cereals\n- Bananas, dates, dried fruit\n- Honey, jam, sports drinks\n\n### **Protein** (moderate, ~1.2-1.6g/kg = 82-109g)\n- Lentils, chickpeas, beans\n- Tofu, tempeh\n- Greek yogurt, cottage cheese\n- Eggs (if acceptable)\n- Protein powder (pea/rice based)\n\n### **Hydration**\n- Water (consistent throughout day)\n- Sports drinks with electrolytes (sodium 300-600mg per liter)\n- Coconut water\n- Herbal tea\n\n## Pre-Race Day (24 hours before)\n- Maximize familiar, low-fiber carbs\n- Minimize fiber, fat, and excess protein\n- Stay hydrated but don't overdo it (causes bathroom issues)\n\n## Race Day (2-3 hours before)\n- 200-300g easily digestible carbs\n- Example: toast with jam + banana + sports drink\n\n## During Race (if >2.5 hours)\n- 30-60g carbs/hour via gels, sports drinks, or dried fruit\n\n**Avoid new foods\u2014test everything in training!**",
+    "test_case": {
+      "prompt_inputs": {
+        "height": "178",
+        "weight": "68",
+        "goal": "Marathon runner preparing for race day - maximize carbohydrate intake and optimize hydration timing",
+        "restrictions": "Vegetarian, no nuts"
+      },
+      "solution_criteria": [
+        "Meal plan covers all three meals plus pre/during/post-workout nutrition appropriate for marathon training",
+        "Carbohydrate content is high (55-65% of calories) with strategic timing around training",
+        "Hydration strategy includes timing and volume recommendations aligned with exercise intensity",
+        "All meals respect vegetarian and nut-free restrictions"
+      ],
+      "task_description": "Write a compact, concise 1 day meal plan for a single athlete.",
+      "scenario": "Testing with a specific sport discipline and corresponding dietary needs (e.g., a marathon runner requiring high carbohydrate intake and specific hydration timing)"
+    },
+    "score": 2,
+    "reasoning": "The solution provides valuable general guidance on marathon nutrition strategy and meets some secondary criteria (carb focus, hydration timing, restriction compliance). However, it fundamentally fails to deliver the core requirement: a compact, concise 1-day meal plan. The mandatory requirements explicitly demand: (1) daily caloric total, (2) macronutrient breakdown, and (3) meals with exact foods, portions, and timing. The solution provides none of these. Instead, it offers a framework and food categories without constructing an actual day's worth of meals. This is a strategic nutrition guide, not a meal plan."
+  },
+  {
+    "output": "# Nutrition Plan for Muscle Gain (Vegan, Gluten-Free, No Nuts)\n\n## Daily Caloric Intake\n- **Target: ~2,800-3,000 calories/day** (slight surplus for muscle gain)\n- Adjust based on progress after 2-3 weeks\n\n## Macronutrient Targets\n- **Protein: 110-130g/day** (1.5-1.8g per kg body weight)\n- **Carbs: 350-400g/day** (fuel for training)\n- **Fats: 70-85g/day** (hormonal health)\n\n## Protein-Rich Vegan Foods\n\n**Legumes & Pulses:**\n- Lentils (red, brown, green)\n- Chickpeas\n- Black beans, pinto beans\n- Split peas\n- Tofu & tempeh (watch for gluten in some brands)\n\n**Grains:**\n- Quinoa, buckwheat, millet\n- Rice (brown, white, basmati)\n- Oats (certified gluten-free)\n\n**Seeds & Protein:**\n- Pumpkin seeds, sunflower seeds, hemp seeds\n- Tahini (sesame)\n\n**Other:**\n- Vegan protein powder (pea, rice, hemp, soy)\n- Nutritional yeast\n- Plant-based milk (fortified with B12 & protein)\n\n## Sample Day\n\n| Meal | Example |\n|------|---------|\n| **Breakfast** | Oatmeal + hemp seeds + berries + plant milk |\n| **Snack** | Hummus + gluten-free crackers |\n| **Lunch** | Quinoa + lentil curry + vegetables |\n| **Snack** | Vegan protein shake (pea protein + fruit) |\n| **Dinner** | Tofu stir-fry + brown rice + vegetables |\n\n## Important Notes\n\u2713 Track protein intake carefully\u2014it's the hardest macronutrient on a vegan diet  \n\u2713 Supplement: B12, vitamin D, omega-3s (algae), iron  \n\u2713 Combine complementary proteins for complete amino acids  \n\u2713 Read labels carefully for hidden gluten\n\nWould you like specific meal prep ideas or recipes?",
+    "test_case": {
+      "prompt_inputs": {
+        "height": "178 cm",
+        "weight": "72 kg",
+        "goal": "muscle gain with high protein intake",
+        "restrictions": "vegan, no gluten, no nuts"
+      },
+      "solution_criteria": [
+        "Meal plan covers all three meals and includes snacks totaling approximately 2800-3000 calories",
+        "All meals strictly adhere to vegan, gluten-free, and nut-free restrictions",
+        "Includes at least 120g of plant-based protein distributed across the day from varied sources (legumes, tofu, tempeh, seeds, grains)",
+        "Plan is presented in compact, easy-to-read format suitable for a single day"
+      ],
+      "task_description": "Write a compact, concise 1 day meal plan for a single athlete.",
+      "scenario": "Testing with multiple dietary restrictions or preferences (e.g., a vegan weightlifter needing plant-based protein sources and calorie targets)"
+    },
+    "score": 3,
+    "reasoning": "The solution fails to meet mandatory requirements. While it provides excellent general guidance on caloric targets, macronutrient ratios, and food options, the actual 'sample day' meal plan is insufficiently detailed. The mandatory requirement explicitly states the output should include 'meals with exact foods, portions and timing.' The provided sample day has no portions, no caloric breakdowns per meal, and no timing information. This makes it impossible to verify whether the plan actually achieves the stated 2,800-3,000 calorie target or 120g+ protein distribution. A meal plan must be specific enough for an athlete to follow; this one is more of a template than an actionable plan."
+  },
+  {
+    "output": "# Pre-Competition Nutrition Plan\n\n## Daily Calorie Target\n~2,400-2,600 calories (maintenance + light activity buffer)\n\n## Meal Structure\n**4-5 smaller meals** spaced 2-3 hours apart to minimize digestive stress\n\n---\n\n## Sample Daily Breakdown\n\n### Breakfast (6-7 AM)\n- White toast with almond butter\n- Banana\n- Orange juice\n- ~500 cal\n\n### Mid-Morning (9 AM)\n- Rice cakes with honey\n- Applesauce\n- ~250 cal\n\n### Lunch (12 PM)\n- Grilled chicken breast (150g)\n- White rice (1.5 cups cooked)\n- Carrots (cooked)\n- Olive oil drizzle\n- ~550 cal\n\n### Pre-Swim Snack (1.5-2 hrs before)\n- Energy drink or sports drink (6% carbs)\n- Banana\n- ~200 cal\n\n### Dinner (6 PM)\n- Lean fish or chicken (150g)\n- White pasta or rice\n- Well-cooked vegetables (zucchini, peeled potatoes)\n- ~550 cal\n\n### Evening (optional)\n- Rice cakes + jam or honey\n- ~200 cal\n\n---\n\n## Key Principles\n\u2713 **High carbs** (55-60%) for energy  \n\u2713 **Adequate protein** (100-110g) for recovery  \n\u2713 **Low fiber** - peel vegetables, choose white carbs  \n\u2713 **Low fat** - avoid fried foods  \n\u2713 **Hydrate well** - 3-4L water daily  \n\u2713 **Avoid** within 3 hours of swimming: dairy, high fiber, excessive fat\n\nWould you like specific recipes or a detailed shopping list?",
+    "test_case": {
+      "prompt_inputs": {
+        "height": "178 cm",
+        "weight": "72 kg",
+        "goal": "Maintain energy and performance during pre-competition week while minimizing digestive stress before daily swimming sessions",
+        "restrictions": "No dairy, no high-fiber foods"
+      },
+      "solution_criteria": [
+        "Meal plan covers all meals for one day (breakfast, lunch, dinner, snacks)",
+        "All meals are easily digestible and avoid dairy and high-fiber ingredients",
+        "Caloric intake and macronutrient distribution are appropriate for maintaining energy during pre-competition training",
+        "Meals are practical and compact enough to prepare/consume without excessive time burden"
+      ],
+      "task_description": "Write a compact, concise 1 day meal plan for a single athlete.",
+      "scenario": "Testing with a specific goal and training phase (e.g., a swimmer in pre-competition week needing to maintain energy while avoiding heavy digestion issues)"
+    },
+    "score": 3,
+    "reasoning": "The solution demonstrates strong understanding of pre-competition nutrition principles and provides practical, well-structured meal timing that respects digestive constraints. However, it fails two mandatory requirements: it provides only a caloric range without a specific daily total, and it completely omits the required macronutrient breakdown (grams or percentages of protein/carbs/fats). While the solution mentions 'High carbs (55-60%)' and 'Adequate protein (100-110g)' in key principles, these are not presented as a formal macronutrient breakdown tied to the daily plan. Additionally, the meal calorie estimates don't align with the stated daily target. These are explicit mandatory requirements that must be met."
+  }
+]
