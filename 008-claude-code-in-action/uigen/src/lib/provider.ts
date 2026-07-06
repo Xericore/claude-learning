@@ -1,4 +1,4 @@
-import { anthropic } from "@ai-sdk/anthropic";
+import { createAnthropic } from "@ai-sdk/anthropic";
 import {
   LanguageModelV1,
   LanguageModelV1StreamPart,
@@ -517,6 +517,11 @@ export function getLanguageModel() {
     );
     return new MockLanguageModel("mock-" + MODEL);
   }
+
+  const anthropic = createAnthropic({
+    apiKey,
+    baseURL: process.env.ANTHROPIC_BASE_URL?.trim(),
+  });
 
   return anthropic(MODEL);
 }

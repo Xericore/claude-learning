@@ -1,2 +1,3 @@
 /.env
 /006-model-context-protocol/app.egg-info/
+/008-claude-code-in-action/uigen/src/generated/
