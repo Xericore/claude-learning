@@ -10,6 +10,41 @@ interface MessageListProps {
   isLoading?: boolean;
 }
 
+const STR_REPLACE_VERBS: Record<string, [string, string]> = {
+  create: ["Creating", "Created"],
+  str_replace: ["Editing", "Edited"],
+  insert: ["Updating", "Updated"],
+  view: ["Reading", "Read"],
+  undo_edit: ["Undoing changes to", "Undid changes to"],
+};
+
+function getToolCallLabel(toolName: string, args: any, isDone: boolean): string {
+  const path = typeof args?.path === "string" ? args.path : undefined;
+
+  if (toolName === "str_replace_editor") {
+    const [inProgress, done] = STR_REPLACE_VERBS[args?.command] ?? [
+      "Updating",
+      "Updated",
+    ];
+    const verb = isDone ? done : inProgress;
+    return path ? `${verb} ${path}` : `${verb} file`;
+  }
+
+  if (toolName === "file_manager") {
+    if (args?.command === "rename" && path && args?.new_path) {
+      return isDone
+        ? `Renamed ${path} to ${args.new_path}`
+        : `Renaming ${path} to ${args.new_path}`;
+    }
+    if (args?.command === "delete" && path) {
+      return isDone ? `Deleted ${path}` : `Deleting ${path}`;
+    }
+    return isDone ? "Updated files" : "Updating files";
+  }
+
+  return toolName;
+}
+
 export function MessageList({ messages, isLoading }: MessageListProps) {
   if (messages.length === 0) {
     return (
@@ -76,19 +111,17 @@ export function MessageList({ messages, isLoading }: MessageListProps) {
                             );
                           case "tool-invocation":
                             const tool = part.toolInvocation;
+                            const toolDone = tool.state === "result" && !!tool.result;
                             return (
                               <div key={partIndex} className="inline-flex items-center gap-2 mt-2 px-3 py-1.5 bg-neutral-50 rounded-lg text-xs font-mono border border-neutral-200">
-                                {tool.state === "result" && tool.result ? (
-                                  <>
-                                    <div className="w-2 h-2 rounded-full bg-emerald-500"></div>
-                                    <span className="text-neutral-700">{tool.toolName}</span>
-                                  </>
+                                {toolDone ? (
+                                  <div className="w-2 h-2 rounded-full bg-emerald-500"></div>
                                 ) : (
-                                  <>
-                                    <Loader2 className="w-3 h-3 animate-spin text-blue-600" />
-                                    <span className="text-neutral-700">{tool.toolName}</span>
-                                  </>
+                                  <Loader2 className="w-3 h-3 animate-spin text-blue-600" />
                                 )}
+                                <span className="text-neutral-700">
+                                  {getToolCallLabel(tool.toolName, tool.args, toolDone)}
+                                </span>
                               </div>
                             );
                           case "source":
